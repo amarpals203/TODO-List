@@ -1,0 +1,87 @@
+body{
+  background-color: black;
+}
+.to-do-list
+{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+button
+{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5xp;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+} 
+h1{
+  font-size: 4rem;
+  color: azure;
+}
+.add-task{
+  background-color:hsl(36, 80%, 47%);
+  border-radius: 40px;
+}
+.add-button:hover{
+  background-color:hsl(125, 72%, 64%);
+  border-radius: 40px;
+
+}
+.del-btn{
+  background-color:hsl(114, 60%, 51%);
+  border-radius: 40px;
+
+}
+.del-btn:hover{
+  background-color:hsl(10, 80%, 54%);
+  border-radius: 40px;
+
+}
+.move-btn{
+  background-color:hsl(288, 37%, 48%);
+  border-radius: 40px;
+
+}
+.move-btn:hover{
+  background-color:hsl(207, 80%, 54%);
+  border-radius: 40px;
+
+}
+input[type="text"]
+{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0 , 0%, 80%, 0.5);
+  border-radius: 20px;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text
+{
+  flex:1;
+  
+}
+.del-btn, .move-btn{
+  padding: 8px, 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+ 
+
