@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 const List = () => {
-    const [task,settask]=useState(["Breakfast","Shower","Long Walk","Study","Programming"])
+    const [task,settask]=useState(["Breakfast","Shower","Long Walk","Study","Coding"])
     const [newtask,setnewtask]=useState("")
 
     function handleChange(event) {

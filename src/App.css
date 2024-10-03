@@ -1,68 +1,73 @@
-body{
+body {
   background-color: black;
 }
-.to-do-list
-{
+
+.to-do-list {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 100px;
+  padding: 0 20px; /* Add padding for mobile devices */
 }
-button
-{
+
+button {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
   color: white;
   border: none;
-  border-radius: 5xp;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.5 ease;
-} 
-h1{
+  transition: background-color 0.5s ease;
+}
+
+h1 {
   font-size: 4rem;
   color: azure;
 }
-.add-task{
-  background-color:hsl(36, 80%, 47%);
-  border-radius: 40px;
-}
-.add-button:hover{
-  background-color:hsl(125, 72%, 64%);
-  border-radius: 40px;
 
-}
-.del-btn{
-  background-color:hsl(114, 60%, 51%);
+.add-task {
+  background-color: hsl(36, 80%, 47%);
   border-radius: 40px;
-
 }
-.del-btn:hover{
-  background-color:hsl(10, 80%, 54%);
+
+.add-button:hover {
+  background-color: hsl(125, 72%, 64%);
   border-radius: 40px;
-
 }
-.move-btn{
-  background-color:hsl(288, 37%, 48%);
+
+.del-btn {
+  background-color: hsl(114, 60%, 51%);
   border-radius: 40px;
-
 }
-.move-btn:hover{
-  background-color:hsl(207, 80%, 54%);
+
+.del-btn:hover {
+  background-color: hsl(10, 80%, 54%);
   border-radius: 40px;
-
 }
-input[type="text"]
-{
+
+.move-btn {
+  background-color: hsl(288, 37%, 48%);
+  border-radius: 40px;
+}
+
+.move-btn:hover {
+  background-color: hsl(207, 80%, 54%);
+  border-radius: 40px;
+}
+
+input[type="text"] {
   font-size: 1.6rem;
   padding: 10px;
-  border: 2px solid hsla(0 , 0%, 80%, 0.5);
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
   border-radius: 20px;
   color: hsla(0, 0%, 0%, 0.5);
 }
-ol{
+
+ol {
   padding: 0;
 }
-li{
+
+li {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
@@ -73,15 +78,45 @@ li{
   display: flex;
   align-items: center;
 }
-.text
-{
-  flex:1;
-  
+
+.text {
+  flex: 1;
 }
-.del-btn, .move-btn{
-  padding: 8px, 12px;
+
+.del-btn, .move-btn {
+  padding: 8px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
 }
- 
 
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem; /* Adjust the heading size for smaller screens */
+  }
+  
+  .to-do-list {
+    margin-top: 50px;
+  }
+
+  button {
+    font-size: 1.2rem; /* Reduce button size */
+    padding: 8px 15px;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+
+  li {
+    font-size: 1.5rem;
+    padding: 10px; /* Reduce padding for list items */
+  }
+
+  .del-btn, .move-btn {
+    padding: 6px 10px;
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+}
